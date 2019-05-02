@@ -10,6 +10,8 @@ import UIKit
 
 class PlanetsCollectionViewController: UICollectionViewController {
 
+	let planetController = PlanetController()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,14 +20,17 @@ class PlanetsCollectionViewController: UICollectionViewController {
 	
 
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 5
+		return planetController.planets.count
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlanetCell", for: indexPath)
 		guard let planetCell = cell as? PlanetCollectionViewCell else { return cell }
 		
-		planetCell.textLabel.text = "Marsorz"
+		let planet = planetController.planets[indexPath.item]
+		
+		planetCell.textLabel.text = planet.name
+		planetCell.imageView.image = planet.image
 		
 		
 		return planetCell
