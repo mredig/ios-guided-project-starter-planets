@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="7za-x8-qZZ">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="7za-x8-qZZ" customClass="PlanetCollectionViewCell" customModule="Planets" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -65,8 +65,12 @@
                                     <constraint firstItem="6r5-Zn-5mr" firstAttribute="top" secondItem="7za-x8-qZZ" secondAttribute="top" id="SxL-DP-OIk"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="6r5-Zn-5mr" secondAttribute="trailing" id="f2K-Qd-euA"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="planetImageView" destination="tAe-ow-nWy" id="ee5-xo-0XF"/>
+                                    <outlet property="planetLabel" destination="M93-dl-U3Q" id="M1d-8a-cC8"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell2" id="COc-Vs-K9a">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell2" id="COc-Vs-K9a" customClass="PlanetCollectionViewCell" customModule="Planets" customModuleProvider="target">
                                 <rect key="frame" x="147" y="0.0" width="120" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -105,8 +109,12 @@
                                     <constraint firstAttribute="bottom" secondItem="q0U-Td-SyD" secondAttribute="bottom" id="aVU-px-CCe"/>
                                     <constraint firstAttribute="trailing" secondItem="q0U-Td-SyD" secondAttribute="trailing" id="xA3-0i-6ie"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="planetImageView" destination="kfp-HR-3P9" id="tFN-Xf-OtI"/>
+                                    <outlet property="planetLabel" destination="8ZS-8a-bNQ" id="1YZ-rh-TRa"/>
+                                </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell3" id="Ea1-NV-LaE">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell3" id="Ea1-NV-LaE" customClass="PlanetCollectionViewCell" customModule="Planets" customModuleProvider="target">
                                 <rect key="frame" x="294" y="0.0" width="120" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -150,6 +158,10 @@
                                     <constraint firstAttribute="bottom" secondItem="Rbw-BT-kZS" secondAttribute="bottom" id="aY5-wf-gKh"/>
                                     <constraint firstAttribute="trailing" secondItem="Rbw-BT-kZS" secondAttribute="trailing" id="qSP-zi-21F"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="planetImageView" destination="WLk-Sm-A7a" id="R6J-c8-qCY"/>
+                                    <outlet property="planetLabel" destination="Wzc-Mz-AdE" id="jxo-lD-KxT"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
