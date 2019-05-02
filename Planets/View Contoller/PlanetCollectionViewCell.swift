@@ -9,8 +9,8 @@
 import UIKit
 
 class PlanetCollectionViewCell: UICollectionViewCell {
-	@IBOutlet var planetImageView: UIImageView!
-	@IBOutlet var planetLabel: UILabel!
+	@IBOutlet var imageView: UIImageView!
+	@IBOutlet var textLabel: UILabel!
 	
 	
 }
