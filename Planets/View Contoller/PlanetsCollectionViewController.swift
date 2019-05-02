@@ -24,7 +24,6 @@ class PlanetsCollectionViewController: UICollectionViewController {
 	}
 	
 	func updateViews() {
-		planetController.updatePlanets()
 		collectionView.reloadData()
 	}
 	
