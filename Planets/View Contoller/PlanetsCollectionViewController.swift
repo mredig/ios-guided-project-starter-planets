@@ -17,6 +17,16 @@ class PlanetsCollectionViewController: UICollectionViewController {
 
     }
 
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		updateViews()
+	}
+	
+	func updateViews() {
+		planetController.updatePlanets()
+		collectionView.reloadData()
+	}
 	
 
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
